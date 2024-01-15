@@ -1,0 +1,44 @@
+[
+    {
+        "titleartist": "Innuendo",
+        "author": "Queen",
+        "yearproduction": 1991,
+        "cdimage": "https://m.media-amazon.com/images/I/51uLbA44G1L._UX358_FMwebp_QL85_.jpg",
+        "genremusical": "Pop/Rock"
+    },
+    {
+        "titleartist": "A Night At The Opera",
+        "author": "Queen",
+        "yearproduction": 1975,
+        "cdimage": "https://m.media-amazon.com/images/I/51PUorlJEOL._UX358_FMwebp_QL85_.jpg",
+        "genremusical": "Pop/Rock"
+    },
+    {
+        "titleartist": "A Kind Of Magic",
+        "author": "Queen",
+        "yearproduction": 1986,
+        "cdimage": "https://m.media-amazon.com/images/I/610xsIV374S._UX358_FMwebp_QL85_.jpg",
+        "genremusical": "Pop/Rock"
+    },
+    {
+        "titleartist": "Made In Heaven",
+        "author": "Queen",
+        "yearproduction": 1995,
+        "cdimage": "https://m.media-amazon.com/images/I/512s3s1iDxL._UX358_FMwebp_QL85_.jpg",
+        "genremusical": "Pop/Rock"
+    },
+    {
+        "titleartist": "Hot Space",
+        "author": "Queen",
+        "yearproduction": 1982,
+        "cdimage": "https://m.media-amazon.com/images/I/419Ov61VSqL._UX358_FMwebp_QL85_.jpg",
+        "genremusical": "Pop/Rock"
+    },
+    {
+        "titleartist": "On Fire: Live At The Bowl",
+        "author": "Queen",
+        "yearproduction": 2004,
+        "cdimage": "https://m.media-amazon.com/images/I/51jZWjBF0lL._UX358_FMwebp_QL85_.jpg",
+        "genremusical": "Pop/Rock"
+    }
+]

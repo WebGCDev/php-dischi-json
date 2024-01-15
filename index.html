@@ -6,11 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PHP Dischi JSON</title>
     <!-- Bootstrap CDN link -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
     <!-- /Bootstrap CDN link -->
     <!-- Css -->
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
     <!-- /Css -->
     <!-- Axios CDN script -->
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
@@ -22,6 +21,55 @@
 </head>
 
 <body>
+
+    <div class="jumbotrone" id="app">
+
+        <header v-if="clickedcd === false">
+
+        </header>
+
+        <div class="container" v-if="clickedcd === false">
+            <div class="row row-cols-3 pt-3 justify-content-center align-items-center">
+                <div class="col ms_cardmusic justify-content-center align-items-center mx-3 my-4"
+                    v-for="(disc, index) in discListJoin" :key="index" @click.once="handlePreview(index)">
+
+                    <img :src="disc.cdimage" class="card-img-music" :alt="disc.title">
+                    <ul class="ps-0 text-center">
+                        <li class="my-2 ">
+                            <h3>{{ disc.titleartist }}</h3>
+                        </li>
+                        <li class="my-2">
+                            <h4>{{ disc.author }}</h4>
+                        </li>
+                        <li class="my-2">{{ disc.yearproduction }}</li>
+                    </ul>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="ms_container text-start" v-else>
+
+            <div class="ms_cardmusic-preview">
+
+                <img :src="discListJoin[activeDisc].cdimage" class="card-img-music"
+                    :alt="discListJoin[activeDisc].title">
+                <ul class="">
+                    <li class="my-4">
+                        <h3>{{ discListJoin[activeDisc].titleartist }}</h3>
+                    </li>
+                    <li class="my-4">
+                        <h4>{{ discListJoin[activeDisc].author }}</h4>
+                    </li>
+                    <li class="my-4">{{ discListJoin[activeDisc].yearproduction }}</li>
+                    <li class="my-4">{{ discListJoin[activeDisc].genremusical }}</li>
+                </ul>
+
+            </div>
+
+        </div>
+
+    </div>
     <!-- JS -->
     <script src="js/script.js"></script>
     <!-- /JS -->
